@@ -6,10 +6,10 @@ from scipy.stats import norm
 from sklearn.preprocessing import StandardScaler
 from scipy import stats
 import warnings
-warning.filterwarning('ignore')
+warnings.filterwarnings('ignore')
 
 
 # Import training data
-df_train = pd.read_csv('../input/train.csv')
+df_train = pd.read_csv("./wrangled_data.csv")
 
-df_train.columns
+print(df_train.head())
